@@ -14,16 +14,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
         integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
-            <a href="./index.html"></a>
+        <div class="header-container">
+            <a href="./index.html" class="logo header-logo">
+                <svg width="75" height="25" class="header-logo__icon">
+                    <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
+            </a>
             <nav class="nav">
-                <ul class="nav__list">
+                <ul class="nav__list list">
                     <li class="nav__item"><a href="" class="nav__link">Our Plan</a></li>
                     <li class="nav__item"><a href="" class="nav__link">Employers</a></li>
                     <li class="nav__item"><a href="" class="nav__link">Brokers</a></li>
@@ -32,61 +36,88 @@
                     <li class="nav__item"><a href="" class="nav__link">Blog</a></li>
                 </ul>
             </nav>
-            <button type="button" class="request-button">Request a demo</button>
-            <button type="button" class="regisrt-button">Login</button>
-            <button type="button" class="lang">en</button>
+            <div class="header__button">
+                <button type="button" class="request-button">Request a demo</button>
+                <button type="button" class="regisrt-button">Login
+                    <svg width="13" height="8">
+                        <use href="./images/icons.svg#icon-arrow-down"></use>
+                    </svg>
+                </button>
+                <button type="button" class="lang">en</button>
+            </div>
         </div>
     </header>
     <main class="main">
         <section class="hero">
-            <div class="container">
+            <div class="hero-container">
                 <h1 class="hero__caption">Give your team peace of mind with supplemental health insurance from Brella.
                 </h1>
+                <Strong class="hero__strong">I'm wondering...</Strong>
                 <form class="hero-form">
-                    <label class="hero-form__label">I'm wondering...
+                    <label class="hero-form__label">
                         <input type="text" placeholder="how Brella's plan works" class="hero-form__input">
                     </label>
-                    <button type="submit" class="hero-form__button"></button>
+                    <button type="submit" class="hero-form__button">Find out</button>
                 </form>
             </div>
-        </section>
-        <section class="avdantage">
-            <div class="container">
-                <h2 class="advantage-caption">avdantage</h2>
-                <ul class="advantage__list">
-                    <li class="advantage__item">
-                        <h3 class="advantage__title">More coverage</h3>
-                        <p class="advantage__text">Brella covers 13,000+ injuries and illnesses from concussions to
-                            cancer.</p>
-                    </li>
-                    <li class="advantage__item">
-                        <h3 class="advantage__title">Less hassle</h3>
-                        <p class="advantage__text">One easy-to-manage plan with paperless install and online admin
-                            tools.</p>
-                    </li>
-                    <li class="advantage__item">
-                        <h3 class="advantage__title">Faster benefits</h3>
-                        <p class="advantage__text">Brella pays claims in hours–not weeks so your people can rest easy.
-                        </p>
-                    </li>
-                </ul>
-            </div>
+            <section class="avdantage">
+                <div class="container">
+                    <h2 class="advantage-caption visually-hidden ">avdantage</h2>
+                    <ul class="advantage__list list">
+                        <li class="advantage__item">
+                            <img src="./images/parasol.jpg" alt="parasol" class="advantage__img img" width="41"
+                                height="45">
+                            <div class="advatage__item-position">
+                                <h3 class="advantage__title">More coverage</h3>
+                                <p class="advantage__text">Brella covers 13,000+ injuries and illnesses from concussions
+                                    to
+                                    cancer.</p>
+                            </div>
+                        </li>
+                        <li class="advantage__item">
+                            <img src="./images/rectangle.jpg" alt="consent" class="advantage__img img" width="46"
+                                height="45">
+                            <div class="advatage__item-position">
+                                <h3 class="advantage__title">Less hassle</h3>
+                                <p class="advantage__text">One easy-to-manage plan with paperless install and online
+                                    admin
+                                    tools.</p>
+                            </div>
+                        </li>
+                        <li class="advantage__item">
+                            <img src="./images/wallet.jpg" alt="wallet" class="advantage__img img" width="58"
+                                height="45">
+                            <div class="advatage__item-position">
+                                <h3 class="advantage__title">Faster benefits</h3>
+                                <p class="advantage__text">Brella pays claims in hours–not weeks so your people can rest
+                                    easy.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </section>
         <section class="why-brella">
-            <h2>why brella?</h2>
-            <div class="reply">
-                <h3 class="reply__title">Today, any health insurance deductible can feel like a high deductible.</h3>
-                <p class="reply__text">Brella's supplemental health plan enhances your health benefit strategy to ensure
-                    that health hardships don't become
-                    financial burdens.</p>
-                <a href="">See our plan</a>
-            </div>
-            <div class="diagram">
-                <h3 class="diagram__title">60%</h4>
-                    <h4 class="diagram__subtitle">of Americans
-                        <span class="diagram_span"> would have to borrow</span>
-                        to cover an unexpected $1000 expense
-                        </p>
+            <div class="container">
+                <div class="why-brella__position">
+                    <div class="reply">
+                        <h2 class="reply__caption">why brella?</h2>
+                        <h3 class="reply__title">Today, any health insurance deductible can feel like a high deductible.
+                        </h3>
+                        <p class="reply__text">Brella's supplemental health plan enhances your health benefit strategy
+                            to
+                            ensure
+                            that health hardships don't become
+                            financial burdens.</p>
+                        <a href="" class="reply__link">See our plan</a>
+                    </div>
+                    <div class="diagram">
+                        <h3 class="diagram__title">60%</h3>
+                        <h4 class="diagram__subtitle">of Americans
+                            <span class="diagram_span"> would have to borrow</span>
+                            to cover an unexpected $1000 expense
+                        </h4>
                         <ul class="diagram__list">
                             <li class="giagram__item">
                                 <p class="diagram__nomeric">$1,644</p>
@@ -97,8 +128,11 @@
                                 <p class="diagram__text">Deductible</p>
                             </li>
                         </ul>
-                        <p class="diagram__sinature">2020 individual averages (Source: KFF)</p>
+                        <p class="diagram__signature">2020 individual averages (Source: KFF)</p>
+                    </div>
+                </div>
             </div>
+
         </section>
         <section class="brella-brings">
             <div class="container">
@@ -202,7 +236,97 @@
                 <li class="clients__item"></li>
             </ul>
         </section>
+        <section class="lierning">
+            <div class="container">
+                <h2 class="lierning__caption">lierning</h2>
+                <ul class="lierning__list">
+                    <li class="lierning__item">
+                        <h3 class="lierning__title">Podcast</h3>
+                        <p class="lierning__text">Better Voluntary Benefits with NFP Voluntary Benefits Practice Leader,
+                            Kim Heald</p>
+                    </li>
+                    <li class="lierning__item">
+                        <h3 class="lierning__title">Insurance Innovation</h3>
+                        <p class="lierning__text">How to Design Simpler Insurance Benefits</p>
+                    </li>
+                    <li class="lierning__item">
+
+                        <h3 class="lierning__title">Benefits Strategy</h3>
+                        <p class="lierning__text">Executive Benefits Outlook with Dan Aceti</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="talk">
+            <div class="container">
+                <h2 class="talk__caption">Let’s talk.</h2>
+                <div class="talk__position">
+                    <div class="talk-img__position"></div>
+                    <div class="talk-text__position">
+                        <p class="talk__text"></p>
+                        <strong class="talk__strong">Let’s talk.</strong>
+                        <a href="" class="talk__link"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__position">
+                <a href="" class="logo footer-logo"></a>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="" class="footer__link"></a></li>
+                    <li class="footer__item"><a href="" class="footer__link"></a></li>
+                    <li class="footer__item"><a href="" class="footer__link"></a></li>
+                    <li class="footer__item"><a href="" class="footer__link"></a></li>
+                    <li class="footer__item"><a href="" class="footer__link"></a></li>
+                    <li class="footer__item"><a href="" class="footer__link"></a></li>
+                    <li class="footer__item"><a href="" class="footer__link"></a></li>
+                    <li class="footer__item"><a href="" class="footer__link"></a></li>
+                    <li class="footer__item"><a href="" class="footer__link"></a></li>
+                    <li class="footer__item"><a href="" class="footer__link"></a></li>
+                </ul>
+
+                <form class="footer-form">
+                    <label class="footer-form__label">
+                        <input type="email" class="footer-form__input">
+                    </label>
+                    <button type="submit" class="footer-form__button"></button>
+                </form>
+                <ul class="footer-icon__list">
+                    <li class="footer-icon__item"></li>
+                    <li class="footer-icon__item"></li>
+                    <li class="footer-icon__item"></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="footenote">
+            <p class="footnote__text">Brella is a limited benefit policy; it is not a substitute for health insurance.
+                The information provided on this
+                website is illustrative only. A complete description of benefits, limitations, and exclusions are
+                provided in your
+                certificate of Insurance and applicable Riders. For a summary of limitations and exclusions, see our
+                FAQ. Payout values
+                listed do not guarantee an amount to be paid for listed conditions. Product not available in all states.
+                All coverage is
+                subject to the terms and conditions of the master group policy.</p>
+            <p class="footnote__text">Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055). Form No.
+                PFSB11-TX</p>
+            <address class="footnote-adress">
+                <p class="footnote-adress__text"></p>
+                <a href="tel:+(844)987-1070" class="footnote-adress__link">(844) 987-1070</a>
+            </address>
+            <div class="copyright">
+                <p class="copyright__text">© 2021 Brella Insurance Inc. All Rights Reserved.
+                    Privacy
+                    Terms of Service</p>
+                <p class="copyright__text"><span class="copyright__span">Privacy</span>
+                    Terms of Service</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

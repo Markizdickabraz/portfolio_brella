@@ -1,0 +1,77 @@
+.logo {
+    // display: block;
+    // fill: aqua // : aqua;
+    color: getColor('header-logo-color');
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+
+.header-logo__icon {
+    fill: currentColor;
+
+}
+
+.header-container {
+    width: 1440px;
+    padding-left: 45px;
+    padding-right: 63px;
+    // margin-left: 0;
+    // margin-right: 0;
+    display: flex;
+    margin: 0 auto;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav__list {
+    display: flex;
+    gap: 50px;
+
+}
+
+.nav__link {
+    display: block;
+    text-decoration: none;
+    padding-top: 29px;
+    padding-bottom: 41px;
+    @include nav-text;
+}
+
+.header__button {
+    margin-left: 69px;
+    display: flex;
+    gap: 27px;
+    padding-top: 19px;
+    padding-bottom: 31px;
+}
+
+.request-button {
+    @include button-text;
+    color: getColor('white-color');
+    background-color: getColor('button-color');
+    width: 137px;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.regisrt-button {
+    @include registr-button-text;
+    color: getColor('header-logo-color');
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.lang {
+    @include registr-button-text;
+    color: getColor('header-logo-color');
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

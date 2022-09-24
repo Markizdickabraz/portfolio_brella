@@ -1,0 +1,83 @@
+.hero {
+    position: relative;
+    background-image: url('../images/hero.jpg');
+    // background-size: cover;
+    padding-top: 161px;
+    padding-bottom: 281px;
+    // background-repeat: no-repeat;
+    // height: 400px;
+    max-width: 1440px;
+    height: 720px;
+    margin: 0 auto;
+}
+
+@media (min-divice-picel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: url('../images/hero@2x.jpg');
+    }
+}
+
+@media (min-divice-picel-ratio: 3),
+(-webkit-min-device-pixel-ratio: 3),
+(min-resolution: 288dpi),
+(min-resolution: 3dppx) {
+    .hero {
+        background-image: url('../images/hero@3x.jpg');
+    }
+}
+
+.hero-container {
+    width: 660px;
+    height: 278px;
+    padding-left: 120px;
+}
+
+.hero__caption {
+    display: block;
+    @include hero-caption;
+    color: getColor('header-logo-color');
+}
+
+.hero__strong {
+    display: block;
+    margin-top: 40px;
+    @include hero-strong;
+    color: getColor('header-logo-color');
+}
+
+.hero-form {
+    margin-top: 16px;
+    display: flex;
+}
+
+.hero-form__input {
+    width: 280px;
+    height: 60px;
+    // padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 88px;
+    border-radius: 6px 0px 0px 6px;
+    // border-color: getColor('white-color');
+    @include placeholder-text;
+    border: none;
+
+    &::placeholder {
+        color: getColor('placeholder-color');
+
+    }
+}
+
+.hero-form__button {
+    width: 123px;
+    @include registr-button-text;
+    color: getColor('white-color');
+    background-color: getColor('button-color');
+    text-align: center;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+}

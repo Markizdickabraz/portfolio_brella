@@ -1,0 +1,95 @@
+$colors: (
+    'header-logo-color': #214E41,
+    'white-color':#fff,
+    'button-color': #43806c,
+    'placeholder-color': #222222,
+    'text-color':#757575,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+.list {
+    list-style: none;
+}
+
+@mixin nav-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    // color: #214E41;
+    color: getColor('header-logo-color');
+}
+
+@mixin button-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+}
+
+@mixin registr-button-text {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.54;
+}
+
+@mixin hero-caption {
+    font-family: 'Roboto';
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.28;
+}
+
+@mixin hero-strong {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+@mixin placeholder-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+}
+
+@mixin advantage-title {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@mixin advantage-text {
+    font-size: 14px;
+    line-height: 1.43;
+}
+
+@mixin why-brella-caption {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.54;
+    letter-spacing: 0.05px;
+    text-transform: uppercase;
+}
+
+@mixin reply-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.28;
+}
+
+@mixin reply-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02px;
+}
+
+@mixin reply-link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    // text-align: center;
+    letter-spacing: 0.02px;
+    // margin-right: 403px;
+}
