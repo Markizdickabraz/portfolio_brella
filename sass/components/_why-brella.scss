@@ -15,7 +15,11 @@
 }
 
 .reply {
-    flex-basis: calc(1200px /2)-60px;
+
+    // padding-right: 21px;
+    flex-basis: 66.6666%;
+    // width: 510px;
+    padding-right: 32px;
 }
 
 .reply__caption {
@@ -35,6 +39,7 @@
     @include reply-text;
     color: getColor('reply-color');
     margin-bottom: 26px;
+    color: getColor('text-color');
 }
 
 .reply__link {
@@ -46,4 +51,87 @@
     text-decoration: none;
     border-bottom: 2px solid getColor('header-logo-color');
 
+}
+
+.diagram {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    // padding-bottom: 150px;
+
+    // flex-basis: calc(1080px /2)-60px;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 510px;
+        height: 2px;
+        top: 65%;
+        left: 0;
+        background-color: getColor('line-color');
+
+    }
+
+}
+
+.diagram-text__position {
+    padding-left: 10px;
+    padding-right: 21px;
+    width: 255px;
+    // padding-top: 169px;
+    // align-self: flex-end;
+    padding-bottom: 45px;
+}
+
+.diagram__title {
+
+    @include diagram-title;
+    color: getColor('header-logo-color');
+    margin-bottom: 30px;
+}
+
+.diagram__subtitle {
+    @include diagram-subtitle;
+    color: getColor('header-logo-color');
+    // padding-right: 21px;
+
+    &--span {
+        text-decoration: underline;
+    }
+}
+
+.diagram__list {
+    display: flex;
+    align-items: flex-end;
+    // padding-right: 10px;
+}
+
+.diagram__item {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.diagram__numeric {
+    @include diagram-numeric;
+    color: getColor('header-logo-color');
+    text-align: center;
+}
+
+.diagram__svg {
+    margin-bottom: 20px;
+}
+
+.diagram__text {
+    @include diagram__text;
+    color: getColor('header-logo-color');
+    text-align: center;
+}
+
+.why-brella__signature {
+    text-align: end;
+    @include diagram-numeric;
+    // 
+    padding-right: 80px;
+    color: getColor('text-color');
+    padding-top: 10px;
 }

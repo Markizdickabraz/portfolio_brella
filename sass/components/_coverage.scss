@@ -1,0 +1,52 @@
+.coverage {
+    padding-top: 120px;
+}
+
+.coverage__position {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 102px;
+}
+
+.coverage__caption {
+    @include coverage-caption;
+    color: getColor('button-color');
+}
+
+.coverage__title {
+    @include brella-brings-title;
+    color: getColor('header-logo-color');
+    margin-top: 20px;
+    padding-right: 44px;
+}
+
+.coverage__subtitle {
+    @include reply-text;
+    color: getColor('text-color');
+    margin-top: 34px;
+}
+
+.coverage-percentage__list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    // width: 265px;
+
+}
+
+.coverage-percentage__item {
+    width: 25%;
+}
+
+.coverage-percentage__subject {
+    @include coverage-percentage__subject;
+    color: getColor('line-color');
+    text-transform: uppercase;
+}
+
+.coverage-percentage__text {
+    margin-top: 13px;
+    @include diagram__text;
+    color: getColor('header-logo-color');
+    // padding-right: 23px;
+}

@@ -1,0 +1,45 @@
+.payback {
+    padding-top: 120px;
+    padding-left: 235px;
+
+}
+
+.payback__position {
+    display: flex;
+    gap: 223px;
+    align-items: center;
+}
+
+.payback-text__position {
+    padding-right: 120px;
+}
+
+.payback__caption {
+    @include payback-caption;
+    text-transform: uppercase;
+    color: getColor('button-color');
+    margin-bottom: 20px;
+}
+
+.payback__title {
+    @include hero-caption;
+    text-transform: uppercase;
+    color: getColor('header-logo-color');
+    margin-bottom: 34px;
+}
+
+.payback__text {
+    @include reply-text;
+    color: getColor('text-color');
+    margin-bottom: 26px;
+}
+
+.payback__link {
+    // position: relative;
+    display: inline-block;
+    @include reply-link;
+    color: getColor('header-logo-color');
+    text-decoration: none;
+    border-bottom: 2px solid getColor('header-logo-color');
+    height: 30px;
+}

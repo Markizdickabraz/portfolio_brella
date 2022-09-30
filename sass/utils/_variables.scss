@@ -4,6 +4,8 @@ $colors: (
     'button-color': #43806c,
     'placeholder-color': #222222,
     'text-color':#757575,
+    'line-color': #F0A446,
+    'brella-brings-benefist':#E3EEED,
 );
 
 @function getColor($key) {
@@ -56,18 +58,20 @@ $colors: (
 }
 
 @mixin advantage-title {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
 }
 
 @mixin advantage-text {
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.43;
 }
 
 @mixin why-brella-caption {
-    font-size: 13px;
     font-weight: 400;
+    font-size: 13px;
     line-height: 1.54;
     letter-spacing: 0.05px;
     text-transform: uppercase;
@@ -80,6 +84,7 @@ $colors: (
 }
 
 @mixin reply-text {
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02px;
@@ -92,4 +97,94 @@ $colors: (
     // text-align: center;
     letter-spacing: 0.02px;
     // margin-right: 403px;
+}
+
+@mixin diagram-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1.29;
+    /* identical to box height, or 129% */
+}
+
+@mixin diagram-subtitle {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.69;
+    /* or 169% */
+
+    letter-spacing: 0.02px;
+}
+
+@mixin diagram-numeric {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.69;
+    /* identical to box height, or 169% */
+}
+
+@mixin diagram__text {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.69;
+    /* identical to box height, or 169% */
+}
+
+@mixin brella-brings-caption {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.54;
+    /* identical to box height, or 154% */
+    letter-spacing: 0.05px;
+}
+
+@mixin brella-brings-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.31;
+}
+
+@mixin brella-brings-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.31;
+}
+
+@mixin brella-brings-plan__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+    /* or 170% */
+
+    letter-spacing: 0.02px;
+}
+
+@mixin coverage-caption {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.54;
+    /* identical to box height, or 154% */
+    letter-spacing: 0.05px;
+}
+
+@mixin coverage-percentage__subject {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.3;
+}
+
+@mixin payback-caption {
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 1.54;
+    /* identical to box height, or 154% */
+
+    letter-spacing: 0.05px;
 }

@@ -1,0 +1,69 @@
+.brella-brings {
+    padding-top: 120px;
+}
+
+.brella-brings-container {
+    width: 1440px;
+    margin: 0 auto;
+    // padding-left: 15px;
+    // padding-right: 15px;
+}
+
+.brella-brings__position {
+    display: flex;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    // margin: 0 auto;
+}
+
+.brella-brings-benefist {
+    background-color: getColor('brella-brings-benefist');
+    width: 705px;
+    padding-left: 120px;
+    padding-top: 120px;
+    padding-right: 200px;
+
+}
+
+.brella-brings__caption {
+    @include brella-brings-caption;
+    color: getColor('header-logo-color');
+    margin-bottom: 29px;
+    text-transform: uppercase;
+}
+
+.brella-brings__title {
+    @include brella-brings-title;
+    color: getColor('header-logo-color');
+    margin-bottom: 18px;
+
+}
+
+.brella-brings__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 120px;
+}
+
+.brella-brings__text {
+    @include brella-brings-text;
+    color: getColor('button-color');
+}
+
+.brella-brings-plan {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    background-color: getColor('header-logo-color');
+    width: 735px;
+    padding-top: 160px;
+    padding-right: 120px;
+    padding-bottom: 208px;
+    padding-left: 115px;
+}
+
+.brella-brings-plan__text {
+    @include brella-brings-plan__text;
+    color: getColor('white-color');
+}

@@ -1,0 +1,58 @@
+.employers {
+    padding-top: 126px;
+    background-image: url(../images/employers.jpg);
+    max-width: 1440px;
+    height: 522px;
+    margin: 0 auto;
+}
+
+@media (min-divice-picel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .employers {
+        background-image: url('../images/employers@2x.jpg');
+    }
+}
+
+@media (min-divice-picel-ratio: 3),
+(-webkit-min-device-pixel-ratio: 3),
+(min-resolution: 288dpi),
+(min-resolution: 3dppx) {
+    .employers {
+        background-image: url('../images/employers@3x.jpg');
+    }
+}
+
+.employers-container {
+    padding-left: 120px;
+    max-width: 600px;
+}
+
+.employers__caption {
+    @include coverage-caption;
+    text-transform: uppercase;
+    color: getColor('button-color');
+    margin-bottom: 20px;
+}
+
+.employers__title {
+    @include hero-caption;
+    color: getColor('header-logo-color');
+    margin-bottom: 34px;
+}
+
+.employers__text {
+    @include reply-text;
+    color: getColor('text-color');
+    margin-bottom: 26px;
+}
+
+.employers__link {
+    display: inline-block;
+    height: 30px;
+    @include reply-link;
+    color: getColor('header-logo-color');
+    text-decoration: none;
+    border-bottom: 2px solid getColor('header-logo-color');
+}
